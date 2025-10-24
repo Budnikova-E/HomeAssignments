@@ -1,3 +1,6 @@
+/* Ekaterina Budnikova  st107207@student.spbu.ru
+Hello_world task */
+
 #include <string>
 #include <iostream>
 
