@@ -11,21 +11,19 @@ double calc(std::stringstream& stream){
     std::string currentWord;
 
      while (stream >> currentWord){
-        if (currentWord=="*"){
+        if (currentWord=="+"){
             double first = *last;
             last--;
-            double second = *last;
-            *last = first*second;
-        } else  if (currentWord=="+"){
-            double first = *last;
-            last--;
-            double second = *last;
-            *last = first+second;
+            *last += first;
         } else if (currentWord=="-"){
             double first = *last;
             last--;
             double second = *last;
             *last = second-first;
+        } else if (currentWord=="*"){
+            double first = *last;
+            last--;
+            *last *= first;
         } else if (currentWord=="/"){
             double first = *last;
             last--;
