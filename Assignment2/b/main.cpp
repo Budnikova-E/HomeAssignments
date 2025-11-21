@@ -1,5 +1,5 @@
 /* Ekaterina Budnikova  st107207@student.spbu.ru
-Assignment2a task */
+Assignment2b task */
 
 #include <iostream>
 #include "calc.hpp"
